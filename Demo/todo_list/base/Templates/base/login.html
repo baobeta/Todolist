@@ -1,0 +1,9 @@
+<h1>Dang nhap</h1>
+<form method="POST" >
+    {% csrf_token %}
+    {{form.as_p}}
+    <input type="submit" value="Dang nhap">
+
+</form>
+
+<p>Ban chua co tai khoan? <a href="{% url 'register' %}">Nhan vao de dang ki </a></p>

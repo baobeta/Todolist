@@ -1,0 +1,7 @@
+<a href="{% url 'tasks' %}">Go back</a>
+<form method="POST">
+    {% csrf_token %}
+    <p> Ban co chac chan khi xoa no? "{{task}}" </p>
+    <input type="submit" value="Delete"/>
+
+</form> 
